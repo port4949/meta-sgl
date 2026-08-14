@@ -24,6 +24,7 @@ export default defineConfig({
         text: 'Guides',
         items: [
           { text: 'Building', link: '/building' },
+          { text: 'Building PIC64-HPSC QEMU', link: '/building-pic64hpsc' },
           { text: 'Contribute', link: '/contribute' },
 
         ]

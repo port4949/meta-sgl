@@ -1,0 +1,18 @@
+name: PIC64-HPSC SGL Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-sgl.yml
+    with:
+      kas_config: sgl-scarthgap-pic64hpsc.yml
+      hardware_arch: pic64hpsc
+      runner_arch: x64
+      build_profile: sgl
